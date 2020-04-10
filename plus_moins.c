@@ -5,20 +5,24 @@ Compilation: gcc -o plus_moins plus_moins.c
 Execution: ./plus_moins
 */
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<time.h>
 
 int plus_moins(int choix_joueur, int valeur_a_trouver)
 {
-	if (choix_joueur == valeur_a_trouver)
-		printf("Bingo\n");
-
-	else if (choix_joueur < valeur_a_trouver)
-		printf("plus\n");
-
-	else
-		printf("moins\n");
+   if(choix_joueur == valeur_a_trouver)
+    {
+	printf("Bingo\n");
+    }
+    else if(choix_joueur < valeur_a_trouver)
+    {
+	printf("Plus\n");
+    }
+    else
+    {
+	printf("Moins\n");
+    }
 }
 
 int main()
